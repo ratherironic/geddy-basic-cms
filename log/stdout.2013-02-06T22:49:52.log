@@ -1,0 +1,40 @@
+[Thu, 07 Feb 2013 05:45:26 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/matthewgn/Sites/geddy-basic-cms/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/matthewgn/Sites/geddy-basic-cms/public",
+  "sessions": {
+    "store": "memory",
+    "key": "sid",
+    "expiry": 1209600
+  },
+  "cookieSessionKey": "sdata",
+  "metrics": null,
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/matthewgn/Sites/geddy-basic-cms/config/locales"
+    ]
+  },
+  "hostname": "localhost",
+  "fullHostname": "http://localhost:4000",
+  "connectCompatibility": false,
+  "detailedErrors": true,
+  "model": {
+    "defaultAdapter": "memory"
+  }
+}
+[Thu, 07 Feb 2013 05:45:26 GMT] INFO Creating 1 worker process.
+[Thu, 07 Feb 2013 05:45:27 GMT] INFO Server worker running in development on port 4000 with a PID of: 16701
+[Thu, 07 Feb 2013 05:45:27 GMT] DEBUG LOGGING STARTED ============================================
+[Thu, 07 Feb 2013 05:45:27 GMT] DEBUG ============================================================

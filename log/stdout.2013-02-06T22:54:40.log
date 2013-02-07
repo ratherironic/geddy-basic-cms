@@ -1,0 +1,57 @@
+[Thu, 07 Feb 2013 05:50:05 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "debug": true,
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/matthewgn/Sites/geddy-basic-cms/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/matthewgn/Sites/geddy-basic-cms/public",
+  "sessions": {
+    "store": "memory",
+    "key": "sid",
+    "expiry": 1209600
+  },
+  "cookieSessionKey": "sdata",
+  "metrics": null,
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/matthewgn/Sites/geddy-basic-cms/config/locales"
+    ]
+  },
+  "hostname": "localhost",
+  "fullHostname": "http://localhost:4000",
+  "connectCompatibility": false,
+  "detailedErrors": true,
+  "model": {
+    "defaultAdapter": "memory"
+  },
+  "passport": {
+    "successRedirect": "/",
+    "failureRedirect": "/login",
+    "twitter": {
+      "consumerKey": "XXXXX",
+      "consumerSecret": "XXXXX"
+    },
+    "facebook": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    },
+    "yammer": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    }
+  },
+  "secret": "8d9lgs9Cj9OfeYySXlsoEr6fyoazIqNvKgeTrR2KlSbSlgBJt30J29FUdEGDtCzmH06ONLD5tLxVoHhc8OpEkrI8Oyuc8Jj8bbg0OvCqOwYSqHDkXcYhYNGLVuEOE7TI"
+}
+[Thu, 07 Feb 2013 05:50:05 GMT] INFO Creating 1 worker process.
+[Thu, 07 Feb 2013 05:50:06 GMT] INFO Server worker running in development on port 4000 with a PID of: 17038
+[Thu, 07 Feb 2013 05:50:06 GMT] DEBUG LOGGING STARTED ============================================
+[Thu, 07 Feb 2013 05:50:06 GMT] DEBUG ============================================================
