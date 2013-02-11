@@ -1,0 +1,39 @@
+body { background-color: #E3D4C4; }
+.nav ul { border-bottom:3px solid #CBBDAF; display: block; overflow: hidden; position: relative; }
+.nav ul li { display: block; float: left; font-family: 'Medula One', cursive; height: 45px; padding-top: 10px; text-align: center; width: 25%; }
+.nav ul li a { color: #9B531E; font-size: 231.6%; text-decoration: none; }
+.nav ul .home { border-bottom: 5px solid #CB752A; background-color: #E38430; }
+.nav ul .work { border-bottom: 5px solid #A96122; background-color: #BD6D27; }
+.nav ul .brew { border-bottom: 5px solid #7B270F; background-color: #8A2C12; }
+.nav ul .about { border-bottom: 5px solid #4D030A; background-color: #57040D; }
+#main-container .home,
+#main-container .work,
+#main-container .brew,
+#main-container .about { padding: 30px 0; }
+#main-container .home { background: url(/img/bkg.home.jpg) 0 0 #E3D4C4; }
+#main-container .work { background: url(/img/bkg.work.jpg) 0 0 #CBBDAF; }
+#main-container .brew { background: url(/img/bkg.brew.jpg) 0 0 #BD6D27; }
+#main-container .about{ background: url(/img/bkg.aboutme.jpg) 0 0  #4D030A; }
+#main-container .work h2,
+#main-container .brew h2,
+#main-container .about h2 { border-radius: 50%; font-family: 'Medula One', cursive; color: #8A2C12; font-size: 300%; height: 80px; margin: 20px auto; padding-top: 35px; text-align: center; width: 120px; }
+#main-container .work h2 { background-color: #BD6D27; }
+#main-container .brew h2 { background-color: #57040D; }
+#main-container .about h2 { background-color: #CBBDAF; }
+#main-container .work .info,
+#main-container .brew .info,
+#main-container .about .info { font-family: 'Medula One', cursive; font-size: 180%; margin: 10px auto 0; text-align: center; width: 700px; }
+#main-container .home { display: block; font-family: 'Medula One', cursive; margin: 0 auto; overflow: hidden; position: relative; width: 700px; }
+#main-container .home .section-title { left: 173px; position: absolute; top: 70px; }
+#main-container .home h1 { color: #C9753D; font-size: 590%; line-height: 85px; }
+#main-container .home h2 { color: #7B270F; font-size: 400%; line-height: 40px; }
+#main-container .home p { color: #7B270F; font-size: 280%; }
+#main-container .work ul li { margin: 15px auto; overflow: hidden; width: 700px; }
+#main-container .work .image,
+#main-container .work .description { float: left; }
+#main-container .work .description { margin-left: 20px; }
+#main-container .work .description h3 { color: #7B270F; font-family: 'Medula One', cursive; font-size: 197%; }
+#main-container .work .description p { color: #7B270F; font-family: 'Medula One', cursive; font-size: 138.5%; }
+#main-container .brew h3 { font-family: 'Medula One', cursive; font-size: 197%; margin: 15px auto; width: 700px; }
+#main-container .brew p { color: #7B270F; font-family: 'Medula One', cursive; font-size: 138.5%; margin: 15px auto; width: 700px; }
+#main-container .about p { color: #E3D4C4; display: block; margin: 15px auto; width: 700px; }
