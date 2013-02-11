@@ -17,18 +17,31 @@
 */
 
 var config = {
-  detailedErrors: true
-, debug: true
-, hostname: 'localhost'
-, port: 4000
-, model: {
-    defaultAdapter: 'memory'
-  }
-, sessions: {
-    store: 'memory'
-  , key: 'sid'
-  , expiry: 14 * 24 * 60 * 60
-  }
+    detailedErrors: true, 
+    debug: true, 
+    // Port and host
+    hostname: 'localhost', 
+    port: 4000, 
+    // Log level
+    logLevel: 'info',
+    logColorConsoleOutput: true,
+    model: {
+        defaultAdapter: 'mongo'
+    }, 
+    db: {
+        mongo: {
+            dbname: 'portfolio',
+            port: 27017,
+            host: 'localhost'
+        }
+    },
+    sessions: {
+        store: 'memory'
+        , 
+        key: 'sid'
+        , 
+        expiry: 14 * 24 * 60 * 60
+    }
 };
 
 module.exports = config;

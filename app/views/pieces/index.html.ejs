@@ -1,0 +1,29 @@
+<div class="hero-unit">
+  <h2>Portfolio</h2>
+  <% if (user) { %>
+    <strong>IF LOGGED IN SHOW :</strong>
+  <% } %>
+  <%- linkTo('Create a new Piece', addPiecePath, {class: 'btn pull-right'}); %>
+</div>
+
+<% if (pieces) { %>
+	<% for (var i = 0, ii = pieces.length; i < ii; i++) { %>
+		<div class="row list-item">
+  			<div class="span8">
+    			<h3><%- linkTo(pieces[i].title, piecePath(pieces[i].id)); %></h3>
+  			</div>
+  			<div class="span4">
+
+    			<h3><img src='uploads/<%- pieces[i].picture; %>'></h3>
+ 			</div>
+		</div>
+	<% } %>
+<% } %>
+<div class="nav">
+  <ul>
+    <li class="home"><a href="#">Home</a></li>
+    <li class="work"><a href="#">Work</a></li>
+    <li class="brew"><a href="#">Brew</a></li>
+    <li class="about"><a href="#">About</a></li>
+  </ul>
+</div>
