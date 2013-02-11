@@ -34,6 +34,9 @@ body { background-color: #E3D4C4; }
 #main-container .work .description { margin-left: 20px; }
 #main-container .work .description h3 { color: #7B270F; font-family: 'Medula One', cursive; font-size: 197%; }
 #main-container .work .description p { color: #7B270F; font-family: 'Medula One', cursive; font-size: 138.5%; }
-#main-container .brew h3 { font-family: 'Medula One', cursive; font-size: 197%; margin: 15px auto; width: 700px; }
+#main-container .brew h3,
+#main-container .about h3 { font-family: 'Medula One', cursive; font-size: 197%; margin: 15px auto; width: 700px; }
 #main-container .brew p { color: #7B270F; font-family: 'Medula One', cursive; font-size: 138.5%; margin: 15px auto; width: 700px; }
-#main-container .about p { color: #E3D4C4; display: block; margin: 15px auto; width: 700px; }
+#main-container .about h3 { color: #E3D4C4; }
+#main-container .about p { color: #E3D4C4; display: block; font-family: 'Medula One', cursive; font-size: 138.5%; margin: 15px auto; width: 700px; }
+#main-container .about p a { color: #BD6D27; }
