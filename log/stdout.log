@@ -1,4 +1,4 @@
-[Thu, 07 Feb 2013 05:54:40 GMT] INFO Server starting with config: {
+[Mon, 11 Feb 2013 05:39:48 GMT] INFO Server starting with config: {
   "environment": "development",
   "workers": 1,
   "port": 4000,
@@ -30,8 +30,17 @@
   "fullHostname": "http://localhost:4000",
   "connectCompatibility": false,
   "detailedErrors": true,
+  "logLevel": "info",
+  "logColorConsoleOutput": true,
   "model": {
-    "defaultAdapter": "memory"
+    "defaultAdapter": "mongo"
+  },
+  "db": {
+    "mongo": {
+      "dbname": "portfolio",
+      "port": 27017,
+      "host": "localhost"
+    }
   },
   "passport": {
     "successRedirect": "/",
@@ -51,7 +60,12 @@
   },
   "secret": "8d9lgs9Cj9OfeYySXlsoEr6fyoazIqNvKgeTrR2KlSbSlgBJt30J29FUdEGDtCzmH06ONLD5tLxVoHhc8OpEkrI8Oyuc8Jj8bbg0OvCqOwYSqHDkXcYhYNGLVuEOE7TI"
 }
-[Thu, 07 Feb 2013 05:54:40 GMT] INFO Creating 1 worker process.
-[Thu, 07 Feb 2013 05:54:40 GMT] INFO Server worker running in development on port 4000 with a PID of: 17654
-[Thu, 07 Feb 2013 05:54:40 GMT] DEBUG LOGGING STARTED ============================================
-[Thu, 07 Feb 2013 05:54:40 GMT] DEBUG ============================================================
+[Mon, 11 Feb 2013 05:39:48 GMT] INFO Creating 1 worker process.
+[Mon, 11 Feb 2013 05:39:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 13222
+[Mon, 11 Feb 2013 05:39:48 GMT] DEBUG LOGGING STARTED ============================================
+[Mon, 11 Feb 2013 05:39:48 GMT] DEBUG ============================================================
+[Mon, 11 Feb 2013 05:41:23 GMT] INFO Code changed, killing 13222, cycling ...
+[Mon, 11 Feb 2013 05:41:23 GMT] INFO Creating 1 worker process.
+[Mon, 11 Feb 2013 05:41:23 GMT] INFO Server worker running in development on port 4000 with a PID of: 13305
+[Mon, 11 Feb 2013 05:41:23 GMT] DEBUG LOGGING STARTED ============================================
+[Mon, 11 Feb 2013 05:41:23 GMT] DEBUG ============================================================
