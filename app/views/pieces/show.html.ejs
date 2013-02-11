@@ -1,0 +1,18 @@
+<div class="hero-unit">
+  <h2><%= piece.id %></h2>
+  <%- linkTo('Edit this portfolio Piece', editPiecePath(params.id), {class: 'btn pull-right'}); %>
+</div>
+
+<h2>Portfolio Piece</h2>
+<% for(var i in piece) { -%>
+	<% if(i !== 'saved') { -%>
+		<div class="row list-item">
+			<div class="span8">
+				<h3><%= i %></h3>
+			</div>
+			<div class="span4">
+				<h3><i class="icon-list-alt"></i><%= piece[i] %></h3>
+  			</div>
+		</div>
+	<% } -%>
+<% } -%>
