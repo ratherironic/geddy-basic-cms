@@ -1,23 +1,17 @@
 var geddy = require("geddy");
 var assert = require("chai").assert;
 
-//describe a class or piece of functionality
-//in this case describe developers (nerds, amirite?)
-describe('Developers', function() {
-    it('sample test to prove a point', function() {
-    	var foo = 'this certainly is a string';  	
-    	assert.typeOf(foo, 'string');
-    })
-     it('sample test to prove a point', function() {
-    	var foo = 'this certainly is a string';  	
-    	assert.typeOf(foo, 'string');
-    })
-      it('sample test to prove a point', function() {
-    	var foo = 'this certainly is a string';  	
-    	assert.typeOf(foo, 'string');
-    })
-       it('sample test to prove a point', function() {
-    	var foo = 'this certainly is a string';  	
-    	assert.typeOf(foo, 'string');
-    })
+describe('Pieces', function() {
+    it('has a picture', function(){
+        //TODO: write this test
+    });
+    it('has a title', function(){
+        //TODO: write this test
+    });
+    it('has a link', function() {
+        //TODO: write this test
+    });
+    it('has a description', function(){
+        //TODO: write this test
+    });
 })
