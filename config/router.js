@@ -19,7 +19,7 @@
 
 var router = new geddy.RegExpRouter();
 
-router.get('/').to('Main.index');
+router.get('/').to('Pieces.index');
 
 // Basic routes
 // router.match('/moving/pictures/:id', 'GET').to('Moving.pictures');
