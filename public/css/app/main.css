@@ -1,11 +1,19 @@
 body { background-color: #E3D4C4; }
+.nav { position: fixed; top: 0; width: 100%; z-index: 5; }
 .nav ul { border-bottom:3px solid #CBBDAF; display: block; overflow: hidden; position: relative; }
-.nav ul li { display: block; float: left; font-family: 'Medula One', cursive; height: 45px; padding-top: 10px; text-align: center; width: 25%; }
-.nav ul li a { color: #9B531E; font-size: 231.6%; text-decoration: none; }
+.nav ul li { display: block; float: left; font-family: 'Medula One', cursive; height: 45px; padding-top: 10px; position: relative; text-align: center; width: 25%; }
+.nav ul li a { color: #9B531E; font-size: 231.6%; text-decoration: none; position: relative; z-index: 3; }
 .nav ul .home { border-bottom: 5px solid #CB752A; background-color: #E38430; }
 .nav ul .work { border-bottom: 5px solid #A96122; background-color: #BD6D27; }
 .nav ul .brew { border-bottom: 5px solid #7B270F; background-color: #8A2C12; }
 .nav ul .about { border-bottom: 5px solid #4D030A; background-color: #57040D; }
+.nav ul li span { background-color: #4D030A; display: block; height: 0px; position: relative; top: 60px; width: 100%; z-index: 1;
+	transition:height 0.4s, top 0.4s;
+	-moz-transition:height 0.4s, top 0.4s; /* Firefox 4 */
+	-webkit-transition:height 0.4s, top 0.4s; /* Safari and Chrome */
+	-o-transition:height 0.4s, top 0.4s; /* Opera */ }
+.nav ul li:hover span { height: 60px; top: -51px; }
+#main-container { margin-top: 65px;, }
 #main-container .home,
 #main-container .work,
 #main-container .brew,
@@ -38,5 +46,26 @@ body { background-color: #E3D4C4; }
 #main-container .about h3 { font-family: 'Medula One', cursive; font-size: 197%; margin: 15px auto; width: 700px; }
 #main-container .brew p { color: #7B270F; font-family: 'Medula One', cursive; font-size: 138.5%; margin: 15px auto; width: 700px; }
 #main-container .about h3 { color: #E3D4C4; }
-#main-container .about p { color: #E3D4C4; display: block; font-family: 'Medula One', cursive; font-size: 138.5%; margin: 15px auto; width: 700px; }
+#main-container .about p { color: #E3D4C4; display: block; font-family: 'Medula One', cursive; font-size: 158.5%; margin: 15px auto; width: 700px; }
 #main-container .about p a { color: #BD6D27; }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+	#main-container .home .section-title { left: auto; position: relative; top: auto; }
+	#main-container .home img { display: block; margin: 0 auto; width: 281px; }
+	#main-container .home h1 { font-size: 330%; line-height: 35px; text-align: center; }
+	#main-container .home h2 { font-size: 300%; text-align: center; }
+	#main-container .home,
+	#main-container .work .info,
+	#main-container .brew .info,
+	#main-container .about .info,
+	#main-container .work ul li,
+	#main-container .about h3,
+	#main-container .brew p,
+	#main-container .brew h3,
+	#main-container .about p { width: 300px; }
+}
